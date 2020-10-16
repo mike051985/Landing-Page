@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+    background-color: #d2b48c;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+/* Layout */
+
+.container {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/*Navbar*/
+
+nav {
+    background: #bf935a;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav-toggle {
+    font-size: 1.5rem;
+    color: #8b4513;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    color: #815e32;
+    transform: rotate(90deg);
+}
+
+.logo {
+    height: 80px;
+}
+
+.links a {
+    color: #ffffff;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+}
+
+.links a:hover {
+    color: #8b4513;
+    padding-left: 1.5rem;
+}
+
+.social-icons {
+    display: none;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+
+.show-links {
+    height: 10rem;
+}
+
+@media (min-width: 800px) {
+    .nav-center {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header {
+        padding: 0;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .links {
+        height: auto;
+        display: flex;
+        margin-left: 5em;
+    }
+    .links a {
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+    .social-icons {
+        display: flex;
+    }
+    .social-icons a {
+        margin: 0 0.5rem;
+        color: #8b4513;
+        transition: all 0.3s linear;
+    }
+    .social-icons a:hover {
+        color: #815e32;
+    }
+}
+
+
+/*About*/
+
+#about {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#about p {
+    font-size: 1.2rem;
+}
+
+iframe {
+    max-width: 100%;
+    margin-top: 1em;
+}
+
+
+/* Shopping */
+
+#shopping .box {
+    float: none;
+    text-align: center;
+    width: 100%;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box img {
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.box h3 {
+    color: #8b4513;
+    font-weight: 700;
+}
+
+@media (min-width: 800px) {
+    #shopping .box {
+        float: left;
+        text-align: center;
+        width: 30%;
+        padding: 0.75em;
+        padding-left: 1em;
+    }
+}
+
+
+/* Testimonials */
+
+#boxes {
+    color: #ffffff;
+}
+
+#feature {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    max-width: 400px;
+    margin: 0 auto 3rem auto;
+    border-bottom: 0.2rem solid #ffffff;
+}
+
+.testimonials {
+    background-color: #bf935a;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.testimonials p {
+    padding: 1em;
+}
+
+@media (min-width: 800px) {
+    .container-flex {
+        display: flex;
+    }
+    .test1 {
+        width: 32%;
+    }
+    .test2 {
+        width: 32%;
+    }
+    .test3 {
+        width: 32%;
+    }
+}
+
+
+/* Contact*/
+
+#contact {
+    background-color: #815e32;
+    color: #ffffff;
+    padding-top: 2em;
+}
+
+.contact-title {
+    text-align: center;
+}
+
+.contact-title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.contact-title p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 0.25em 0;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+    color: #b67b5e;
+}
+
+@media (min-width: 800px) {
+    .contact-title h2 {
+        font-size: 3rem;
+    }
+    .contact-title p {
+        font-size: 2rem;
+    }
+    .contact-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-links a {
+        margin: 0 1em;
+    }
+}
+
+
+/*Footer*/
+
+footer {
+    font-weight: 200;
+    text-align: center;
+    padding: 2rem 0;
+    background: #815e32;
+    color: #ffffff;
+}
