@@ -185,6 +185,8 @@ iframe {
     font-weight: 700;
 }
 
+
+
 @media (min-width: 800px) {
     #shopping .box {
         float: left;
@@ -268,6 +270,7 @@ iframe {
 .contact-links a {
     text-decoration: none;
     font-weight: 700;
+    font-size: 2.5rem;
     color: #ffffff;
     padding: 0.25em 0;
 }
